@@ -1,3 +1,3 @@
 <template>
-    我是产品页
+    HomeProduct
 </template>
