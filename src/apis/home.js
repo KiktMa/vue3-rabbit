@@ -10,3 +10,9 @@ export default function getBannerAPI() {
         url: '/home/banner'
     })
 }
+
+export const getNewAPI = () => {
+    return httpInstance({
+        url: '/home/new'
+    })
+}
