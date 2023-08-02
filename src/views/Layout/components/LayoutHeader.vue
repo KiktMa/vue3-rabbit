@@ -12,7 +12,8 @@ const categoryInst = useCategoryStore()
       </h1>
       <ul class="app-header-nav">
         <li class="home" v-for="item in categoryInst.categoryList" :key="item.id">
-          <RouterLink to="/">{{ item.name }}</RouterLink>
+          <!-- 因为要拼接参数id所以在to前面加:id -->
+          <RouterLink :to="`/category/${item.id}`">{{ item.name }}</RouterLink>
         </li>
       </ul>
       <div class="search">
